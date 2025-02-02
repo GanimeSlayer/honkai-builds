@@ -60,6 +60,8 @@ footer {
 
 
 
+
+
 /* Barra de navegación */
 nav {
     background-color: #333;
@@ -95,46 +97,6 @@ section {
 h1 {
     text-align: center;
     color: #333;
-}
-
-/* Publicaciones recientes */
-#publicaciones-recientes ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#publicaciones-recientes ul li {
-    margin-bottom: 10px;
-}
-
-#publicaciones-recientes ul li a {
-    font-size: 18px;
-    color: #333;
-    text-decoration: none;
-}
-
-#publicaciones-recientes ul li a:hover {
-    color: #00bcd4;
-}
-
-/* Opciones de juego */
-#eleccion-juego ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#eleccion-juego ul li {
-    margin-bottom: 10px;
-}
-
-#eleccion-juego ul li a {
-    font-size: 18px;
-    color: #333;
-    text-decoration: none;
-}
-
-#eleccion-juego ul li a:hover {
-    color: #00bcd4;
 }
 
 /* Secciones de personajes */

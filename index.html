@@ -16,21 +16,9 @@
         </ul>
     </nav>
 
-    <!-- Página Principal (Publicaciones recientes y juegos) -->
+    <!-- Página Principal (Sección de bienvenida y selección) -->
     <main>
         <h1>Bienvenidos a las Guías de Personajes</h1>
-
-        <!-- Publicaciones recientes -->
-        <section id="publicaciones-recientes">
-            <h2>Publicaciones Recientes</h2>
-            <ul>
-                <li><a href="#">Guía de Kafka - Honkai Star Rail</a></li>
-                <li><a href="#">Guía de Bronya - Honkai Star Rail</a></li>
-                <li><a href="#">Guía de Personaje 1 - Zenless Zone Zero</a></li>
-                <li><a href="#">Guía de Personaje 1 - Wuthering Waves</a></li>
-                <!-- Agregar más publicaciones recientes -->
-            </ul>
-        </section>
 
         <!-- Opciones para elegir un juego -->
         <section id="eleccion-juego">
@@ -42,14 +30,14 @@
             </ul>
         </section>
 
-        <!-- Sección de personajes de Honkai Star Rail (oculta inicialmente) -->
+        <!-- Sección de personajes de Honkai Star Rail -->
         <div id="HonkaiStarRail" class="personajes" style="display:none;">
             <h2>Personajes de Honkai Star Rail</h2>
             <ul>
                 <li><a href="#" onclick="mostrarGuia('Kafka')">Kafka</a></li>
                 <li><a href="#" onclick="mostrarGuia('Bronya')">Bronya</a></li>
                 <li><a href="#" onclick="mostrarGuia('Seele')">Seele</a></li>
-                <!-- Agregar más personajes de Honkai Star Rail -->
+                <!-- Agregar más personajes -->
             </ul>
         </div>
 
@@ -59,7 +47,7 @@
             <ul>
                 <li><a href="#" onclick="mostrarGuia('Personaje1Z')">Personaje 1</a></li>
                 <li><a href="#" onclick="mostrarGuia('Personaje2Z')">Personaje 2</a></li>
-                <!-- Agregar más personajes de Zenless Zone Zero -->
+                <!-- Agregar más personajes -->
             </ul>
         </div>
 
@@ -69,11 +57,11 @@
             <ul>
                 <li><a href="#" onclick="mostrarGuia('Personaje1W')">Personaje 1</a></li>
                 <li><a href="#" onclick="mostrarGuia('Personaje2W')">Personaje 2</a></li>
-                <!-- Agregar más personajes de Wuthering Waves -->
+                <!-- Agregar más personajes -->
             </ul>
         </div>
 
-        <!-- Sección de guías de personajes -->
+        <!-- Sección de guías de personajes (esto se llenará dinámicamente) -->
         <div id="guiaPersonaje" class="guia">
             <!-- Aquí se mostrará la guía específica de cada personaje -->
         </div>

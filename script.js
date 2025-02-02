@@ -1,13 +1,7 @@
 console.log("Página de guías de personajes cargada.");
 
 
-// Mostrar las publicaciones recientes en la página principal
-function mostrarPublicacionesRecientes() {
-    document.getElementById('publicaciones-recientes').style.display = 'block';
-    document.getElementById('eleccion-juego').style.display = 'block';
-}
-
-// Mostrar los personajes según el juego seleccionado
+// Función que oculta todas las secciones de personajes y muestra la sección correspondiente
 function mostrarPersonajes(juego) {
     // Ocultar todas las secciones de personajes
     const secciones = document.querySelectorAll('.personajes');
@@ -17,9 +11,13 @@ function mostrarPersonajes(juego) {
 
     // Mostrar la sección del juego seleccionado
     document.getElementById(juego).style.display = 'block';
-    
+
     // Limpiar la guía actual
     document.getElementById('guiaPersonaje').innerHTML = '';
+
+    // Ocultar la sección de publicaciones
+    document.getElementById('publicaciones-recientes').style.display = 'none';
+    document.getElementById('eleccion-juego').style.display = 'none';
 }
 
 // Mostrar la guía del personaje seleccionado
@@ -45,6 +43,24 @@ function mostrarGuia(personaje) {
                 <p><strong>Materiales de Mejora:</strong> Material Z, Material W</p>
             `;
             break;
+        case 'Personaje1Z':
+            guiaHTML = `
+                <h2>Guía de Personaje 1 (Zenless Zone Zero)</h2>
+                <p><strong>Mejores Armas:</strong> Arma X, Arma Y</p>
+                <p><strong>Mejores Artefactos:</strong> Artefacto E, Artefacto F</p>
+                <p><strong>Mejor Equipo:</strong> Compañero 5, Compañero 6</p>
+                <p><strong>Materiales de Mejora:</strong> Material A, Material B</p>
+            `;
+            break;
+        case 'Personaje1W':
+            guiaHTML = `
+                <h2>Guía de Personaje 1 (Wuthering Waves)</h2>
+                <p><strong>Mejores Armas:</strong> Arma Z, Arma W</p>
+                <p><strong>Mejores Artefactos:</strong> Artefacto G, Artefacto H</p>
+                <p><strong>Mejor Equipo:</strong> Compañero 7, Compañero 8</p>
+                <p><strong>Materiales de Mejora:</strong> Material M, Material N</p>
+            `;
+            break;
         // Agregar más casos para otros personajes
 
         default:
@@ -55,5 +71,5 @@ function mostrarGuia(personaje) {
     document.getElementById('guiaPersonaje').innerHTML = guiaHTML;
 }
 
-// Mostrar las publicaciones recientes al cargar la página
-mostrarPublicacionesRecientes();
+// Mostrar la primera selección de juego (por defecto, Honkai Star Rail)
+mostrarPersonajes('HonkaiStarRail');
