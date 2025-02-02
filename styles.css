@@ -58,6 +58,8 @@ footer {
     margin-top: 20px;
 }
 
+
+
 /* Barra de navegación */
 nav {
     background-color: #333;
@@ -84,36 +86,87 @@ nav ul li a:hover {
     color: #00bcd4;
 }
 
-/* Secciones de juegos */
+/* Secciones generales */
 section {
     margin-top: 20px;
     padding: 20px;
 }
 
-section h2 {
+h1 {
+    text-align: center;
     color: #333;
 }
 
-section ul {
+/* Publicaciones recientes */
+#publicaciones-recientes ul {
     list-style-type: none;
     padding: 0;
 }
 
-section ul li {
+#publicaciones-recientes ul li {
     margin-bottom: 10px;
 }
 
-/* Estilo para los botones */
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+#publicaciones-recientes ul li a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: #45a049;
+#publicaciones-recientes ul li a:hover {
+    color: #00bcd4;
 }
 
-/* Agregar más estilos según sea necesario */
+/* Opciones de juego */
+#eleccion-juego ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#eleccion-juego ul li {
+    margin-bottom: 10px;
+}
+
+#eleccion-juego ul li a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+#eleccion-juego ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Secciones de personajes */
+.personajes {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.personajes h2 {
+    color: #333;
+}
+
+.personajes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.personajes ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para las guías */
+.guia {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+}
+
+.guia h2 {
+    color: #333;
+}
+
+.guia p {
+    font-size: 16px;
+}

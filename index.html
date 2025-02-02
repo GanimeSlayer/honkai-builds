@@ -4,67 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guías de Personajes</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Barra de navegación -->
     <nav>
         <ul>
-            <li><a href="#HonkaiStarRail">Honkai Star Rail</a></li>
-            <li><a href="#ZenlessZoneZero">Zenless Zone Zero</a></li>
-            <li><a href="#WutheringWaves">Wuthering Waves</a></li>
+            <li><a href="#" onclick="mostrarPersonajes('HonkaiStarRail')">Honkai Star Rail</a></li>
+            <li><a href="#" onclick="mostrarPersonajes('ZenlessZoneZero')">Zenless Zone Zero</a></li>
+            <li><a href="#" onclick="mostrarPersonajes('WutheringWaves')">Wuthering Waves</a></li>
         </ul>
     </nav>
 
-    <!-- Sección de Honkai Star Rail -->
-    <section id="HonkaiStarRail">
-        <h2>Guías de Honkai Star Rail</h2>
-        <ul>
-            <li><a href="#Kafka">Kafka</a></li>
-            <li><a href="#Bronya">Bronya</a></li>
-            <li><a href="#Seele">Seele</a></li>
-            <!-- Agregar más personajes de Honkai Star Rail -->
-        </ul>
-    </section>
+    <!-- Página Principal (Publicaciones recientes y juegos) -->
+    <main>
+        <h1>Bienvenidos a las Guías de Personajes</h1>
 
-    <!-- Sección de Zenless Zone Zero -->
-    <section id="ZenlessZoneZero">
-        <h2>Guías de Zenless Zone Zero</h2>
-        <ul>
-            <li><a href="#Character1">Personaje 1</a></li>
-            <li><a href="#Character2">Personaje 2</a></li>
-            <!-- Agregar más personajes de Zenless Zone Zero -->
-        </ul>
-    </section>
+        <!-- Publicaciones recientes -->
+        <section id="publicaciones-recientes">
+            <h2>Publicaciones Recientes</h2>
+            <ul>
+                <li><a href="#">Guía de Kafka - Honkai Star Rail</a></li>
+                <li><a href="#">Guía de Bronya - Honkai Star Rail</a></li>
+                <li><a href="#">Guía de Personaje 1 - Zenless Zone Zero</a></li>
+                <li><a href="#">Guía de Personaje 1 - Wuthering Waves</a></li>
+                <!-- Agregar más publicaciones recientes -->
+            </ul>
+        </section>
 
-    <!-- Sección de Wuthering Waves -->
-    <section id="WutheringWaves">
-        <h2>Guías de Wuthering Waves</h2>
-        <ul>
-            <li><a href="#Character1">Personaje 1</a></li>
-            <li><a href="#Character2">Personaje 2</a></li>
-            <!-- Agregar más personajes de Wuthering Waves -->
-        </ul>
-    </section>
+        <!-- Opciones para elegir un juego -->
+        <section id="eleccion-juego">
+            <h2>Elige un juego para ver los personajes</h2>
+            <ul>
+                <li><a href="#" onclick="mostrarPersonajes('HonkaiStarRail')">Honkai Star Rail</a></li>
+                <li><a href="#" onclick="mostrarPersonajes('ZenlessZoneZero')">Zenless Zone Zero</a></li>
+                <li><a href="#" onclick="mostrarPersonajes('WutheringWaves')">Wuthering Waves</a></li>
+            </ul>
+        </section>
 
-    <!-- Guías de personajes -->
-    <section id="Kafka">
-        <h2>Guía de Kafka (Honkai Star Rail)</h2>
-        <p><strong>Mejores Armas:</strong> Arma 1, Arma 2</p>
-        <p><strong>Mejores Artefactos:</strong> Artefacto A, Artefacto B</p>
-        <p><strong>Mejor Equipo:</strong> Compañero 1, Compañero 2</p>
-        <p><strong>Materiales de Mejora:</strong> Material X, Material Y</p>
-        <button>Ver Gameplay</button>
-    </section>
+        <!-- Sección de personajes de Honkai Star Rail (oculta inicialmente) -->
+        <div id="HonkaiStarRail" class="personajes" style="display:none;">
+            <h2>Personajes de Honkai Star Rail</h2>
+            <ul>
+                <li><a href="#" onclick="mostrarGuia('Kafka')">Kafka</a></li>
+                <li><a href="#" onclick="mostrarGuia('Bronya')">Bronya</a></li>
+                <li><a href="#" onclick="mostrarGuia('Seele')">Seele</a></li>
+                <!-- Agregar más personajes de Honkai Star Rail -->
+            </ul>
+        </div>
 
+        <!-- Sección de personajes de Zenless Zone Zero -->
+        <div id="ZenlessZoneZero" class="personajes" style="display:none;">
+            <h2>Personajes de Zenless Zone Zero</h2>
+            <ul>
+                <li><a href="#" onclick="mostrarGuia('Personaje1Z')">Personaje 1</a></li>
+                <li><a href="#" onclick="mostrarGuia('Personaje2Z')">Personaje 2</a></li>
+                <!-- Agregar más personajes de Zenless Zone Zero -->
+            </ul>
+        </div>
 
+        <!-- Sección de personajes de Wuthering Waves -->
+        <div id="WutheringWaves" class="personajes" style="display:none;">
+            <h2>Personajes de Wuthering Waves</h2>
+            <ul>
+                <li><a href="#" onclick="mostrarGuia('Personaje1W')">Personaje 1</a></li>
+                <li><a href="#" onclick="mostrarGuia('Personaje2W')">Personaje 2</a></li>
+                <!-- Agregar más personajes de Wuthering Waves -->
+            </ul>
+        </div>
 
-    <footer>
-        <p>© 2025 GanimeSlayer</p>
-    </footer>
+        <!-- Sección de guías de personajes -->
+        <div id="guiaPersonaje" class="guia">
+            <!-- Aquí se mostrará la guía específica de cada personaje -->
+        </div>
 
+    </main>
 
-    <!-- Puedes seguir agregando más guías de personajes aquí -->
-    
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
 </body>
 </html>
