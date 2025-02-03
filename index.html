@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guías de Juegos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Guía de Personaje</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="mostrarInicio()">Inicio</a></li>
-                <li><a href="#" onclick="mostrarJuego('HonkaiStarRail')">Honkai Star Rail</a></li>
-                <li><a href="#" onclick="mostrarJuego('ZenlessZoneZero')">Zenless Zone Zero</a></li>
-                <li><a href="#" onclick="mostrarJuego('WutheringWaves')">Wuthering Waves</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Página principal -->
-        <section id="pagina-principal">
-            <h1>Publicaciones Recientes</h1>
-            <ul>
-                <li>Guía de Kafka - Honkai Star Rail</li>
-                <li>Guía de Bronya - Honkai Star Rail</li>
-                <li>Guía de Personaje 1 - Zenless Zone Zero</li>
-                <li>Guía de Personaje 1 - Wuthering Waves</li>
-            </ul>
-        </section>
-        
-        <!-- Lista de personajes de un juego -->
-        <section id="personajes-juego" style="display: none;">
-            <h1>Personajes</h1>
-            <ul id="lista-personajes"></ul>
-        </section>
+    <div class="container">
+        <!-- Encabezado del personaje -->
+        <div class="character-header">
+            <img id="character-image" src="" alt="Imagen del personaje">
+            <div class="character-details">
+                <h1 id="character-name">Nombre del Personaje</h1>
+                <p id="character-rarity">Rareza: ★★★★★</p>
+                <p id="character-element">Elemento: Rayo</p>
+                <p id="character-path">Vía: Erudición</p>
+            </div>
+        </div>
 
-        <!-- Guía de un personaje -->
-        <section id="guia-personaje" style="display: none;">
-            <div id="contenido-guia"></div>
-        </section>
-    </main>
+        <!-- Navegación de pestañas -->
+        <div class="tabs">
+            <button class="tab" onclick="showTab('info')">Información</button>
+            <button class="tab" onclick="showTab('ascension')">Ascensión</button>
+            <button class="tab" onclick="showTab('skills')">Habilidades</button>
+            <button class="tab" onclick="showTab('eidolons')">Eidolones</button>
+            <button class="tab" onclick="showTab('builds')">Builds</button>
+            <button class="tab" onclick="showTab('teams')">Equipos</button>
+            <button class="tab" onclick="showTab('videos')">Videos</button>
+        </div>
+
+        <!-- Contenido de las pestañas -->
+        <div id="tab-content">
+            <div id="info" class="tab-content">Información general del personaje.</div>
+            <div id="ascension" class="tab-content">Barra de niveles y materiales de ascensión.</div>
+            <div id="skills" class="tab-content">Barra de niveles de habilidades.</div>
+            <div id="eidolons" class="tab-content">Información de Eidolones.</div>
+            <div id="builds" class="tab-content">Builds de armas, artefactos y estadísticas.</div>
+            <div id="teams" class="tab-content">Equipos recomendados.</div>
+            <div id="videos" class="tab-content">Videos de gameplay y guías.</div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

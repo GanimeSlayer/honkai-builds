@@ -1,0 +1,15 @@
+{
+    "kafka": {
+        "name": "Kafka",
+        "rarity": 5,
+        "element": "Rayo",
+        "path": "Erudición",
+        "info": "Kafka es un personaje de...",
+        "ascension": "...",
+        "skills": "...",
+        "eidolons": "...",
+        "builds": "...",
+        "teams": "...",
+        "videos": "..."
+    }
+}
