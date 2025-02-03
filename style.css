@@ -54,3 +54,71 @@ header nav a:hover {
 .recent-posts a:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+.character-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.character-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.character-details {
+    flex-grow: 1;
+}
+
+.tabs button {
+    padding: 10px;
+    margin-right: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tabs button:hover {
+    background-color: #0056b3;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content#info {
+    display: block;
+}
+
+.build-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.build-item:hover {
+    background-color: #f0f0f0;
+}
+
+.team img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.ascension-bar, .skills-bar {
+    margin-bottom: 20px;
+}
+
