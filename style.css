@@ -14,51 +14,43 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.character-header {
-    display: flex;
-    align-items: center;
+header {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.character-header img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px;
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
 }
 
-.character-details {
-    font-size: 14px;
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
 }
 
-.tabs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+header nav a:hover {
+    text-decoration: underline;
 }
 
-.tab {
-    background: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+.recent-posts {
+    list-style: none;
+    padding: 0;
 }
 
-.tab:hover {
-    background: #0056b3;
+.recent-posts li {
+    margin: 10px 0;
 }
 
-.tab-content {
-    display: none;
+.recent-posts a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
 }
 
-.tab-content.active {
-    display: block;
-    padding: 20px;
-    background: #f1f1f1;
-    border-radius: 5px;
-    margin-top: 20px;
+.recent-posts a:hover {
+    text-decoration: underline;
 }

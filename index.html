@@ -3,45 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Personaje</title>
+    <title>Guías de Juegos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- Encabezado del personaje -->
-        <div class="character-header">
-            <img id="character-image" src="" alt="Imagen del personaje">
-            <div class="character-details">
-                <h1 id="character-name">Nombre del Personaje</h1>
-                <p id="character-rarity">Rareza: ★★★★★</p>
-                <p id="character-element">Elemento: Rayo</p>
-                <p id="character-path">Vía: Erudición</p>
-            </div>
-        </div>
-
-        <!-- Navegación de pestañas -->
-        <div class="tabs">
-            <button class="tab" onclick="showTab('info')">Información</button>
-            <button class="tab" onclick="showTab('ascension')">Ascensión</button>
-            <button class="tab" onclick="showTab('skills')">Habilidades</button>
-            <button class="tab" onclick="showTab('eidolons')">Eidolones</button>
-            <button class="tab" onclick="showTab('builds')">Builds</button>
-            <button class="tab" onclick="showTab('teams')">Equipos</button>
-            <button class="tab" onclick="showTab('videos')">Videos</button>
-        </div>
-
-        <!-- Contenido de las pestañas -->
-        <div id="tab-content">
-            <div id="info" class="tab-content">Información general del personaje.</div>
-            <div id="ascension" class="tab-content">Barra de niveles y materiales de ascensión.</div>
-            <div id="skills" class="tab-content">Barra de niveles de habilidades.</div>
-            <div id="eidolons" class="tab-content">Información de Eidolones.</div>
-            <div id="builds" class="tab-content">Builds de armas, artefactos y estadísticas.</div>
-            <div id="teams" class="tab-content">Equipos recomendados.</div>
-            <div id="videos" class="tab-content">Videos de gameplay y guías.</div>
-        </div>
+        <header>
+            <h1>Guías de Juegos</h1>
+            <nav>
+                <a href="honkai.html">Honkai Star Rail</a>
+                <a href="zenless.html">Zenless Zone Zero</a>
+                <a href="wuthering.html">Wuthering Waves</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Publicaciones Recientes</h2>
+            <ul class="recent-posts">
+                <li><a href="guides/kafka.html">Guía de Kafka - Honkai Star Rail</a></li>
+                <li><a href="guides/bronya.html">Guía de Bronya - Honkai Star Rail</a></li>
+                <li><a href="guides/zzzero-character1.html">Guía de Personaje 1 - Zenless Zone Zero</a></li>
+                <li><a href="guides/ww-character1.html">Guía de Personaje 1 - Wuthering Waves</a></li>
+            </ul>
+        </main>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>

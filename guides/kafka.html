@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Personaje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado del personaje -->
+        <div class="character-header">
+            <img id="character-image" src="" alt="Imagen del personaje">
+            <div class="character-details">
+                <h1 id="character-name">Nombre del Personaje</h1>
+                <p id="character-rarity">Rareza: ★★★★★</p>
+                <p id="character-element">Elemento: Rayo</p>
+                <p id="character-path">Vía: Erudición</p>
+            </div>
+        </div>
+
+        <!-- Navegación de pestañas -->
+        <div class="tabs">
+            <button class="tab" onclick="showTab('info')">Información</button>
+            <button class="tab" onclick="showTab('ascension')">Ascensión</button>
+            <button class="tab" onclick="showTab('skills')">Habilidades</button>
+            <button class="tab" onclick="showTab('eidolons')">Eidolones</button>
+            <button class="tab" onclick="showTab('builds')">Builds</button>
+            <button class="tab" onclick="showTab('teams')">Equipos</button>
+            <button class="tab" onclick="showTab('videos')">Videos</button>
+        </div>
+
+        <!-- Contenido de las pestañas -->
+        <div id="tab-content">
+            <div id="info" class="tab-content">Información general del personaje.</div>
+            <div id="ascension" class="tab-content">Barra de niveles y materiales de ascensión.</div>
+            <div id="skills" class="tab-content">Barra de niveles de habilidades.</div>
+            <div id="eidolons" class="tab-content">Información de Eidolones.</div>
+            <div id="builds" class="tab-content">Builds de armas, artefactos y estadísticas.</div>
+            <div id="teams" class="tab-content">Equipos recomendados.</div>
+            <div id="videos" class="tab-content">Videos de gameplay y guías.</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
