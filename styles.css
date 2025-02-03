@@ -1,67 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-header {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-h1 {
-    font-size: 2rem;
-}
-
-.character-guide {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-}
-
-.character {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    width: 300px;
-}
-
-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #2c3e50;
-    color: white;
-    margin-top: 20px;
-}
-
-
-
-
-
 /* Barra de navegación */
 nav {
     background-color: #333;
@@ -88,47 +24,74 @@ nav ul li a:hover {
     color: #00bcd4;
 }
 
-/* Secciones generales */
-section {
-    margin-top: 20px;
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
+h1, h2 {
     color: #333;
 }
 
-/* Secciones de personajes */
-.personajes {
-    margin-top: 20px;
-    padding: 20px;
-}
-
-.personajes h2 {
-    color: #333;
-}
-
-.personajes ul {
+/* Sección de publicaciones recientes */
+#publicaciones-recientes ul {
     list-style-type: none;
     padding: 0;
 }
 
-.personajes ul li {
+#publicaciones-recientes ul li {
     margin-bottom: 10px;
 }
 
-/* Estilo para las guías */
-.guia {
-    margin-top: 20px;
-    padding: 20px;
-    border-top: 2px solid #ccc;
+#publicaciones-recientes ul li a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-.guia h2 {
+#publicaciones-recientes ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la lista de personajes */
+#personajes-juego ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#personajes-juego ul li {
+    margin-bottom: 10px;
+}
+
+#personajes-juego ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#personajes-juego ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de la guía del personaje */
+#guia-personaje {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#guia-personaje h2 {
     color: #333;
 }
 
-.guia p {
+#guia-personaje p {
     font-size: 16px;
 }

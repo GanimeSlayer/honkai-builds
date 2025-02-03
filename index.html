@@ -10,62 +10,40 @@
     <!-- Barra de navegación -->
     <nav>
         <ul>
-            <li><a href="#" onclick="mostrarPersonajes('HonkaiStarRail')">Honkai Star Rail</a></li>
-            <li><a href="#" onclick="mostrarPersonajes('ZenlessZoneZero')">Zenless Zone Zero</a></li>
-            <li><a href="#" onclick="mostrarPersonajes('WutheringWaves')">Wuthering Waves</a></li>
+            <li><a href="#" onclick="mostrarJuego('HonkaiStarRail')">Honkai Star Rail</a></li>
+            <li><a href="#" onclick="mostrarJuego('ZenlessZoneZero')">Zenless Zone Zero</a></li>
+            <li><a href="#" onclick="mostrarJuego('WutheringWaves')">Wuthering Waves</a></li>
         </ul>
     </nav>
 
-    <!-- Página Principal (Sección de bienvenida y selección) -->
+    <!-- Página Principal (Publicaciones recientes y noticias) -->
     <main>
-        <h1>Bienvenidos a las Guías de Personajes</h1>
+        <section id="pagina-principal">
+            <h1>Bienvenidos a las Guías de Personajes</h1>
+            <p>Aquí encontrarás las mejores guías y recomendaciones para tus personajes favoritos.</p>
 
-        <!-- Opciones para elegir un juego -->
-        <section id="eleccion-juego">
-            <h2>Elige un juego para ver los personajes</h2>
-            <ul>
-                <li><a href="#" onclick="mostrarPersonajes('HonkaiStarRail')">Honkai Star Rail</a></li>
-                <li><a href="#" onclick="mostrarPersonajes('ZenlessZoneZero')">Zenless Zone Zero</a></li>
-                <li><a href="#" onclick="mostrarPersonajes('WutheringWaves')">Wuthering Waves</a></li>
-            </ul>
+            <section id="publicaciones-recientes">
+                <h2>Publicaciones Recientes</h2>
+                <ul>
+                    <li><a href="#">Guía de Kafka - Honkai Star Rail</a></li>
+                    <li><a href="#">Guía de Bronya - Honkai Star Rail</a></li>
+                    <li><a href="#">Guía de Personaje 1 - Zenless Zone Zero</a></li>
+                    <li><a href="#">Guía de Personaje 1 - Wuthering Waves</a></li>
+                </ul>
+            </section>
         </section>
 
-        <!-- Sección de personajes de Honkai Star Rail -->
-        <div id="HonkaiStarRail" class="personajes" style="display:none;">
-            <h2>Personajes de Honkai Star Rail</h2>
-            <ul>
-                <li><a href="#" onclick="mostrarGuia('Kafka')">Kafka</a></li>
-                <li><a href="#" onclick="mostrarGuia('Bronya')">Bronya</a></li>
-                <li><a href="#" onclick="mostrarGuia('Seele')">Seele</a></li>
-                <!-- Agregar más personajes -->
-            </ul>
-        </div>
+        <!-- Sección de selección de personajes por juego (esto estará oculto inicialmente) -->
+        <section id="personajes-juego" style="display:none;">
+            <h2>Elige un Personaje</h2>
+            <ul id="lista-personajes"></ul>
+        </section>
 
-        <!-- Sección de personajes de Zenless Zone Zero -->
-        <div id="ZenlessZoneZero" class="personajes" style="display:none;">
-            <h2>Personajes de Zenless Zone Zero</h2>
-            <ul>
-                <li><a href="#" onclick="mostrarGuia('Personaje1Z')">Personaje 1</a></li>
-                <li><a href="#" onclick="mostrarGuia('Personaje2Z')">Personaje 2</a></li>
-                <!-- Agregar más personajes -->
-            </ul>
-        </div>
-
-        <!-- Sección de personajes de Wuthering Waves -->
-        <div id="WutheringWaves" class="personajes" style="display:none;">
-            <h2>Personajes de Wuthering Waves</h2>
-            <ul>
-                <li><a href="#" onclick="mostrarGuia('Personaje1W')">Personaje 1</a></li>
-                <li><a href="#" onclick="mostrarGuia('Personaje2W')">Personaje 2</a></li>
-                <!-- Agregar más personajes -->
-            </ul>
-        </div>
-
-        <!-- Sección de guías de personajes (esto se llenará dinámicamente) -->
-        <div id="guiaPersonaje" class="guia">
-            <!-- Aquí se mostrará la guía específica de cada personaje -->
-        </div>
-
+        <!-- Guía del personaje (esto se llenará dinámicamente) -->
+        <section id="guia-personaje" style="display:none;">
+            <h2>Guía del Personaje</h2>
+            <div id="contenido-guia"></div>
+        </section>
     </main>
 
     <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
