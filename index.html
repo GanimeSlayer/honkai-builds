@@ -1,51 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guías de Personajes</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Guías de Juegos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Barra de navegación -->
-    <nav>
-        <ul>
-            <li><a href="#" onclick="mostrarJuego('HonkaiStarRail')">Honkai Star Rail</a></li>
-            <li><a href="#" onclick="mostrarJuego('ZenlessZoneZero')">Zenless Zone Zero</a></li>
-            <li><a href="#" onclick="mostrarJuego('WutheringWaves')">Wuthering Waves</a></li>
-        </ul>
-    </nav>
-
-    <!-- Página Principal (Publicaciones recientes y noticias) -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarInicio()">Inicio</a></li>
+                <li><a href="#" onclick="mostrarJuego('HonkaiStarRail')">Honkai Star Rail</a></li>
+                <li><a href="#" onclick="mostrarJuego('ZenlessZoneZero')">Zenless Zone Zero</a></li>
+                <li><a href="#" onclick="mostrarJuego('WutheringWaves')">Wuthering Waves</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
+        <!-- Página principal -->
         <section id="pagina-principal">
-            <h1>Bienvenidos a las Guías de Personajes</h1>
-            <p>Aquí encontrarás las mejores guías y recomendaciones para tus personajes favoritos.</p>
-
-            <section id="publicaciones-recientes">
-                <h2>Publicaciones Recientes</h2>
-                <ul>
-                    <li><a href="#">Guía de Kafka - Honkai Star Rail</a></li>
-                    <li><a href="#">Guía de Bronya - Honkai Star Rail</a></li>
-                    <li><a href="#">Guía de Personaje 1 - Zenless Zone Zero</a></li>
-                    <li><a href="#">Guía de Personaje 1 - Wuthering Waves</a></li>
-                </ul>
-            </section>
+            <h1>Publicaciones Recientes</h1>
+            <ul>
+                <li>Guía de Kafka - Honkai Star Rail</li>
+                <li>Guía de Bronya - Honkai Star Rail</li>
+                <li>Guía de Personaje 1 - Zenless Zone Zero</li>
+                <li>Guía de Personaje 1 - Wuthering Waves</li>
+            </ul>
         </section>
-
-        <!-- Sección de selección de personajes por juego (esto estará oculto inicialmente) -->
-        <section id="personajes-juego" style="display:none;">
-            <h2>Elige un Personaje</h2>
+        
+        <!-- Lista de personajes de un juego -->
+        <section id="personajes-juego" style="display: none;">
+            <h1>Personajes</h1>
             <ul id="lista-personajes"></ul>
         </section>
 
-        <!-- Guía del personaje (esto se llenará dinámicamente) -->
-        <section id="guia-personaje" style="display:none;">
-            <h2>Guía del Personaje</h2>
+        <!-- Guía de un personaje -->
+        <section id="guia-personaje" style="display: none;">
             <div id="contenido-guia"></div>
         </section>
     </main>
-
-    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
